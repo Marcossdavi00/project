@@ -1,0 +1,25 @@
+ <div class="container">
+ <center><h2 class="rounded-pill" style="background-color: cadetblue;">Postagens</h2></center>
+  <table class="table table-striped" id="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>#</th>
+        <th>Título</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each posts}}
+      <tr>
+        <td>{{id}}</td>
+        <td>{{title}}</td>
+        <td>{{body}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  <br />
+ <form action="/">
+  <button class="btn btn-primary"><< Voltar</button>
+ </form>
+ </div>

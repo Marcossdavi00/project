@@ -1,0 +1,25 @@
+ <div class="container">
+ <center><h2 class="rounded-pill" style="background-color: cadetblue;">To-dos</h2></center>
+  <table class="table table-striped" id="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>#</th>
+        <th>Título</th>
+        <th>Conclusão</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each todos}}
+      <tr>
+        <td>{{id}}</td>
+        <td>{{title}}</td>
+        <td>{{completed}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  <br />
+ <form action="/">
+  <button class="btn btn-primary"><< Voltar</button>
+ </form>
+ </div>
